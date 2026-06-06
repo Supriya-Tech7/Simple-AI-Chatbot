@@ -19,7 +19,7 @@ GROQ_API_KEY=your_key_here
 Then just run it:
 
 ```bash
-python Ayan.py
+python chatbot.py
 ```
 
 ---
