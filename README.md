@@ -6,27 +6,27 @@ A simple terminal chatbot I built using Groq's API and LLaMA 3.1. It's fast and 
 
 ## Getting Started
 
-bash
+```bash
 pip install groq python-dotenv
+```
 
+Create a `.env` file and put your API key there:
 
-Create a .env file and put your API key there:
-
-
+```
 GROQ_API_KEY=your_key_here
-
+```
 
 Then just run it:
 
-bash
-chatbot.py
-
+```bash
+python Ayan.py
+```
 
 ---
 
 ## How it works
 
-You type something, the bot replies. Type exit to quit. Pretty straightforward.
+You type something, the bot replies. Type `exit` to quit. Pretty straightforward.
 
 ---
 
@@ -34,15 +34,15 @@ You type something, the bot replies. Type exit to quit. Pretty straightforward.
 
 Don't hardcode your API key in the code. I learned this the hard way when GitHub flagged it. Use environment variables instead:
 
-python
+```python
 import os
 from dotenv import load_dotenv
 load_dotenv()
 client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
+```
 
-
-Also add .env to your .gitignore.
+Also add `.env` to your `.gitignore`.
 
 ---
 
-Made by *Supriya Mondal*
+Made by **Supriya Mondal**
